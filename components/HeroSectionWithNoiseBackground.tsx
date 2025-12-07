@@ -6,8 +6,8 @@ export function HeroSectionWithNoiseBackground() {
     <div className="relative flex w-full items-center justify-center overflow-hidden bg-white px-4 py-20 md:py-40 dark:bg-black">
       <Background />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl">
-        <Badge text="1 ano de mercado" />
+      <div className="relative z-10 mx-auto w-full max-w-6xl">
+        
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ export function HeroSectionWithNoiseBackground() {
           <div className="mt-8 flex w-full flex-col justify-center gap-4 sm:flex-row">
             
             <button className="dark:hover:bg-fuschia-800 darhk:text-white rounded-lg bg-rose-700 px-6 py-3 text-base font-medium text-white shadow-[0_1px_0_0_#0ea5e9,0_-1px_0_0_#0ea5eh9] hover:bg-rose-600 dark:bg-rose-500 dark:shadow-[0_1px_0_0_#0369a1,0_-1px_0_0_#0369ah1]">
-              Download for Windows
+              AGENDAR MINHA REUNIÃO
             </button>
           </div>
         </motion.div>
@@ -50,8 +50,8 @@ export function HeroSectionWithNoiseBackground() {
               src="/images/dash-panel.webp"
               alt="Product screenshot"
               className="h-auto w-full object-cover"
-              width={1024}
-              height={576}
+              width={728}
+              height={344}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-50"></div>
           </motion.div>

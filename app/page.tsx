@@ -1,11 +1,10 @@
-import { FrequentlyAskedQuestions } from "@/components/faq";
-import { Features } from "@/components/features";
-import { Hero } from "@/components/hero";
-import { SpotlightLogoCloud } from "@/components/logos-cloud";
-import { ContactFormGridWithDetails } from "@/components/contact-form";
-import { MacbookScroll } from "@/components/ui/macbook-scroll";
+
 import { BackgroundLines } from "@/components/ui/BackgroundLines";
 import { HeroSectionWithNoiseBackground } from "@/components/HeroSectionWithNoiseBackground";
+import { BentoGrid } from "@/components/BentoGrid";
+import { EmblaCarousel } from "@/components/EmblaCarousel";
+import { CtaBack } from "@/components/CtaBack";
+
 
 
 
@@ -17,15 +16,12 @@ export default function Home() {
         <BackgroundLines />
       </div>
       <div className="relative z-10">
-    
+        
         <HeroSectionWithNoiseBackground />
-        <Hero />
-        <SpotlightLogoCloud />
-        <Features />
-        <FrequentlyAskedQuestions />
-        <ContactFormGridWithDetails />
-        <MacbookScroll />
-      </div>
+        <BentoGrid />
+        <EmblaCarousel />
+        <CtaBack />
+   </div>
     </div>
   );
 }
