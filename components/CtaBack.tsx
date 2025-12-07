@@ -1,8 +1,22 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { HiArrowRight } from "react-icons/hi2";
+import FilloutForm from "./FilloutForm";
+import { sendTrackingEvent } from '@/lib/trackingUtils';
 
 export function CtaBack() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+    sendTrackingEvent('ViewContent', {
+      content_name: 'start_form',
+      content_category: 'form-open',
+      content_type: 'button-click',
+      value: 1
+    });
+  };
+
   return (
     <section className="relative z-20 mx-auto my-20 grid w-full max-w-8xl grid-cols-1 justify-start bg-gradient-to-br from-slate-800 to-gray-900 sm:rounded-3xl md:my-40 md:grid-cols-2 dark:from-neutral-900">
       <div className="absolute -top-px right-10 z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-purple-500 to-transparent md:right-60"></div>
@@ -35,7 +49,7 @@ export function CtaBack() {
             
           </p>
 
-          <button className="group mt-8 flex items-center space-x-2 rounded-lg bg-gradient-to-b from-blue-500 to-blue-700 px-4 py-2 text-base text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
+          <button onClick={handleClick} className="group mt-8 flex items-center space-x-2 rounded-lg bg-gradient-to-b from-red-600 to-red-700 px-4 py-2 text-base text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] hover:from-red-700 hover:to-red-800 transition-all duration-200">
             <span>AGENDAR A MINHA REUNIÃO</span>
             <HiArrowRight className="mt-0.5 h-3 w-3 stroke-[1px] text-white transition-transform duration-200 group-hover:translate-x-1" />
           </button>
@@ -60,6 +74,20 @@ export function CtaBack() {
       <div className="absolute right-10 -bottom-px z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-purple-500 to-transparent md:right-60"></div>
       <div className="absolute right-10 -bottom-px z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent md:right-40"></div>
       <div className="absolute right-10 -bottom-px z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent md:right-80"></div>
+
+      {open && (
+        <div className="fixed inset-0 z-[9999] flex bg-black/80 rounded-lg">
+          <button
+            onClick={() => setOpen(false)}
+            className="absolute top-4 right-6 text-3xl text-white z-[10000]"
+          >
+            ✕
+          </button>
+          <div className="w-full h-full">
+            <FilloutForm />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

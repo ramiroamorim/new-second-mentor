@@ -3,8 +3,8 @@ import { BackgroundLines } from "@/components/ui/BackgroundLines";
 import { HeroSectionWithNoiseBackground } from "@/components/HeroSectionWithNoiseBackground";
 import { BentoGrid } from "@/components/BentoGrid";
 import { EmblaCarousel } from "@/components/EmblaCarousel";
-import TradingViewWidget from "@/components/TradingViewWidget";
 import { CtaBack } from "@/components/CtaBack";
+import { Profile } from "@/components/profile";
 
 
 
@@ -28,7 +28,7 @@ export default function Home() {
 
         <EmblaCarousel />
         <CtaBack />
-        <TradingViewWidget />
+        <Profile />
    </div>
     </div>
   );
