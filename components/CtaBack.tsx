@@ -18,7 +18,7 @@ export function CtaBack() {
   };
 
   return (
-    <section className="relative z-20 mx-auto my-20 grid w-full max-w-8xl grid-cols-1 justify-start bg-gradient-to-br from-slate-800 to-gray-900 sm:rounded-3xl md:my-40 md:grid-cols-2 dark:from-neutral-900">
+    <section className="relative z-20 mx-auto my-20 grid w-full max-w-7xl grid-cols-1 justify-start bg-gradient-to-br from-slate-800 to-gray-900 sm:rounded-3xl md:my-40 md:grid-cols-2 dark:from-neutral-900">
       <div className="absolute -top-px right-10 z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-purple-500 to-transparent md:right-60"></div>
       <div className="absolute -top-px right-10 z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-indigo-500 to-transparent md:right-40"></div>
       <div className="absolute -top-px right-10 z-30 h-px w-1/2 bg-gradient-to-r from-transparent via-sky-500 to-transparent md:right-80"></div>
@@ -37,7 +37,7 @@ export function CtaBack() {
           }}
         ></div>
 
-        <div className="relative px-0 py-10 sm:px-10 sm:pt-20 sm:pb-10 lg:px-10">
+        <div className="relative px-0 py-10 sm:px-8 sm:pt-20 sm:pb-10 lg:px-10">
           <h2 className="text-left text-2xl font-semibold tracking-[-0.015em] text-balance text-white md:text-3xl lg:text-5xl">
            Mas porque ganhar em outras moedas?
           
