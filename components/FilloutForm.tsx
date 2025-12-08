@@ -17,10 +17,7 @@ export default function FilloutForm() {
     return () => {
       document.body.removeChild(script);
 
-
-
-
-    };
+};
   }, []);
 
   return (

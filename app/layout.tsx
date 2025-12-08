@@ -32,10 +32,37 @@ export default function RootLayout({
           defer 
           src="https://track.ramiroamorim.com.br/script.js" 
           data-website-id="619d2723-ec69-4ba5-9a28-1c7ca43dec5c"
-        />
-      </head>
+        />ß
+
+       {/* 1. O Script Principal do Pixel */}
+        <Script id="facebook-pixel" strategy="afterInteractive">
+
+          {`!function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window, document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          fbq('init', '1363853995230465');
+          fbq('track', 'PageView');`}
+        </Script>
+
+<noscript>
+  
+  <img height="1"
+  width="1" 
+  style={{display:"none"}}
+  src="https://www.facebook.com/tr?id=1363853995230465&ev=PageView&noscript=1"
+  alt="Facebook Pixel"
+/></noscript>
       
-      <body className={cn("antialiased bg-black", inter.className)}>
+      </head>
+   
+
+
+   <body className={cn("antialiased bg-black", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
          <AmplitudeInit />
           <TrackingInit />
@@ -60,4 +87,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+}           
