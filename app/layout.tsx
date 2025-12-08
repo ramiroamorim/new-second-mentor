@@ -28,11 +28,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        <script 
-          defer 
-          src="https://track.ramiroamorim.com.br/script.js" 
+        <script
+          defer
+          src="https://track.ramiroamorim.com.br/script.js"
           data-website-id="619d2723-ec69-4ba5-9a28-1c7ca43dec5c"
-        />ß
+        />
 
        {/* 1. O Script Principal do Pixel */}
         <Script id="facebook-pixel" strategy="afterInteractive">
