@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Adero';
+  src: url('/OpenType-PS/Adero-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adero';
+  src: url('/OpenType-PS/Adero-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adero';
+  src: url('/OpenType-PS/Adero-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adero';
+  src: url('/OpenType-PS/Adero-Oblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adero';
+  src: url('/OpenType-PS/Adero-BoldOblique.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adero';
+  src: url('/OpenType-PS/Adero-LightOblique.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

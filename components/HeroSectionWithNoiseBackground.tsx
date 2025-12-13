@@ -26,7 +26,7 @@ export function HeroSectionWithNoiseBackground() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="text-center text-5xl font-bold tracking-tight text-neutral-800 md:text-3xl lg:text-5xl dark:text-neutral-100"
+          className="text-center text-2xl font-bold tracking-tight text-neutral-800 md:text-3xl lg:text-5xl dark:text-neutral-100"
         >
           Uma das maiores oportunidades do tráfego direto! <br /> Tráfego inteligente, e branding para seus infoprodutos...
         </motion.h2>
@@ -40,7 +40,7 @@ export function HeroSectionWithNoiseBackground() {
         >
           <div className="mt-12 flex w-full flex-col justify-center gap-4 sm:flex-row">
 
-            <button onClick={handleClick} className="rounded-lg bg-gradient-to-b from-red-600 to-red-700 px-6 py-3 text-base font-medium text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] hover:from-red-700 hover:to-red-800 transition-all duration-200">
+            <button onClick={handleClick} className="rounded-lg bg-gradient-to-b from-red-600 to-red-700 px-6 py-3 text-base font-bold text-black shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] hover:from-red-700 hover:to-red-800 transition-all duration-200">
               AGENDAR MINHA REUNIÃO
             </button>
           </div>
@@ -147,7 +147,7 @@ const Noise = () => {
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
     </>
   );
 };

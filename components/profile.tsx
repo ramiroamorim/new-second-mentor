@@ -54,7 +54,7 @@ export function Profile() {
             Então em alguns meses conseguiu sair do absoluto zero e faturar milhões sem aparecer e agora quer compartilhar este conhecimento com pessoas dedicadas a conhecer este modelo de negócio.
           </p>
           <div className="mt-6 flex justify-center md:justify-start">
-            <button onClick={handleClick} className="rounded-lg bg-gradient-to-b from-red-600 to-red-700 px-10 py-4 text-lg font-medium text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] hover:from-red-700 hover:to-red-800 transition-all duration-200">
+            <button onClick={handleClick} className="rounded-lg bg-gradient-to-b from-red-600 to-red-700 px-10 py-4 text-lg font-bold text-black shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset] hover:from-red-700 hover:to-red-800 transition-all duration-200">
               AGENDAR MINHA REUNIÃO
             </button>
           </div>

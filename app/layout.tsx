@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import "./fonts.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "next-themes";
 import { TrackingInit } from "./components/trackingInit";
 import { AmplitudeInit } from "@/components/AmplitudeInit";
 import { FacebookPixelInit } from "./components/FacebookPixelInit";
 import Script from "next/script";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "O Plano Global",
@@ -58,7 +56,7 @@ export default function RootLayout({
    
 
 
-   <body className={cn("antialiased bg-black", inter.className)}>
+   <body className={cn("antialiased bg-black font-adero")}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
          <AmplitudeInit />
           <TrackingInit />
