@@ -43,6 +43,8 @@ export default function RootLayout({
           // Init será feito pelo FacebookPixelInit com dados hasheados`}
         </Script>
 
+
+
         <noscript>
           <img
             height="1"
